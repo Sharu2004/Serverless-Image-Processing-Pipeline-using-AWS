@@ -20,31 +20,6 @@ Serverless architecture (no servers required)
 Image resizing using Sharp
 Scalable and event-driven system
 
-## CloudShell Commands (Sharp Layer Setup)
-
-The following commands were used in AWS CloudShell to build the Sharp layer for Lambda:
-
-```bash
-# create project folder
-mkdir sharp-layer
-cd sharp-layer
-
-# initialize node project
-npm init -y
-
-# install sharp
-npm install sharp
-
-# create required folder structure
-mkdir nodejs
-
-# move dependencies into nodejs folder
-mv node_modules nodejs/
-mv package.json nodejs/
-
-# create zip file for Lambda Layer
-zip -r sharp-layer.zip nodejs
-
 
 
 📌 Workflow
@@ -88,3 +63,32 @@ Bucket naming mismatch caused deployment errors
 📌 Outcome
 
 Successfully built a scalable serverless pipeline that processes images automatically upon upload.
+
+
+
+## CloudShell Commands (Sharp Layer Setup)
+
+The following commands were used in AWS CloudShell to build the Sharp layer for Lambda:
+
+```bash
+# create project folder
+mkdir sharp-layer
+cd sharp-layer
+
+# initialize node project
+npm init -y
+
+# install sharp
+npm install sharp
+
+# create required folder structure
+mkdir nodejs
+
+# move dependencies into nodejs folder
+mv node_modules nodejs/
+mv package.json nodejs/
+
+# create zip file for Lambda Layer
+zip -r sharp-layer.zip nodejs
+
+
