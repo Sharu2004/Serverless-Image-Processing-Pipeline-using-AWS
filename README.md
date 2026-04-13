@@ -13,21 +13,25 @@ Amazon S3
 AWS Lambda
 AWS CloudWatch
 AWS IAM
+
 📌 Features
 Automatic image processing on upload
 Serverless architecture (no servers required)
 Image resizing using Sharp
 Scalable and event-driven system
+
 📌 Workflow
 User uploads image to S3 input bucket
 S3 triggers Lambda function
 Lambda reads image and resizes it
 Processed image is stored in output bucket
+
 📌 Key Implementation Details
 Runtime: Node.js 24
 Image processing library: Sharp (via Lambda Layer)
 Memory: 1024 MB
 Timeout: 15 seconds
+
 📌 Screenshots
 
 
@@ -48,10 +52,12 @@ Example:
 
 ### Output Image
 ![Output](screenshots/output.png)
+
 📌 Challenges Faced
 Node.js 24 runtime compatibility issues
 Sharp installation required Lambda Layer
 Bucket naming mismatch caused deployment errors
+
 📌 Outcome
 
 Successfully built a scalable serverless pipeline that processes images automatically upon upload.
