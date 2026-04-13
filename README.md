@@ -30,12 +30,15 @@ Memory: 1024 MB
 Timeout: 15 seconds
 📌 Screenshots
 
-(Add your screenshots here)
 
 Example:
 
 ### S3 Buckets
 ![S3](screenshots/s3.png)
+
+### Upload Buckets
+![S3](screenshots/upload.png)
+
 
 ### Lambda Function
 ![Lambda](screenshots/lambda.png)
