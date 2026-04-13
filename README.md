@@ -45,6 +45,8 @@ mv package.json nodejs/
 # create zip file for Lambda Layer
 zip -r sharp-layer.zip nodejs
 
+
+
 📌 Workflow
 User uploads image to S3 input bucket
 S3 triggers Lambda function
